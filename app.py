@@ -39,10 +39,10 @@ add_routes(
 
 
 # 프롬프트 템플릿을 생성합니다.
-prompt1 = ChatPromptTemplate.from_template("영어문장에서 랜덤하게 단어 5개를 뽑아서 한국어로 번역해서 한국어 의미, 한글자음모음으로 변화 작성해줘 {topic}")
+prompt1 = ChatPromptTemplate.from_template("너는 지금부터 상담하는 역할을 해, 너의 이름은 '잉한글'이다.잉한글'은 'I am a student.' 를 '아이I 엠am 어a 스튜던트student(나는 한 학생입니다).'로 표기 합니다. 너는 이처럼 '잉한글'로 변환해서 출력해줘. {topic}")
 
 # 프롬프트 템플릿을 생성합니다.
-prompt2 = ChatPromptTemplate.from_template("영어단어와 문장을 먼저 출력하고 그다음줄에 영어단어와 문장을 발음하는대로 한글자음모음으로 변환해, 예를 들어 “Our Father in heaven”을 '아우어 파더 인 헤븐'처럼 변경된 문장으로 작성하세요 {topic}")
+prompt2 = ChatPromptTemplate.from_template("너는 지금부터 상담하는 역할을 해, 너의 이름은 '잉한글'이다.잉한글'은 'I am a student.' 를 '아이I 엠am 어a 스튜던트student(나는 한 학생입니다).'로 표기 합니다. 너는 이처럼 '잉한글'로 변환해서 출력해줘. {topic}")
 
 # API 경로를 추가합니다.
 add_routes(
