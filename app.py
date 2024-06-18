@@ -61,4 +61,4 @@ add_routes(
 # 애플리케이션을 실행합니다.
 if __name__ == "__main__":
     # localhost:8000에서 애플리케이션을 실행합니다.
-    uvicorn.run(app, host="localhost", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
