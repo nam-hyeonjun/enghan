@@ -25,8 +25,8 @@ app = FastAPI(
 # 여기서는 API 키, 온도 설정, 모델 이름을 파라미터로 제공합니다.
 model = ChatOpenAI(
     api_key=OPENAI_API_KEY,  # OpenAI API 키를 사용하여 인증합니다.
-    temperature=0.7,         # 응답의 창의성(무작위성) 수준을 설정합니다. 0.7은 중간 정도의 창의성을 의미합니다.
-    model='gpt-3.5-turbo'    # 사용할 OpenAI 모델의 이름을 지정합니다.
+    temperature=0.8,         # 응답의 창의성(무작위성) 수준을 설정합니다. 0.7은 중간 정도의 창의성을 의미합니다.
+    model='gpt-4'    # 사용할 OpenAI 모델의 이름을 지정합니다.
 )
 
 # Langchain API 경로를 추가합니다.
