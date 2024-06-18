@@ -16,11 +16,11 @@ option = st.radio("작성을 원하는 항목을 선택하세요:", ("알파벳-
 if st.button("작성 요청 보내기"):
     if option == "단어번역":
         # 작성 API에 POST 요청을 보냅니다.
-        response = requests.post("http://0.0.0.0:8000/essay/invoke",
+        response = requests.post("http://14.39.221.117:8000/essay/invoke",
                                  json={'input': {'topic': topic}})
     else:
         # 작성 API에 POST 요청을 보냅니다.
-        response = requests.post("http://0.0.0.0:8000/poem/invoke",
+        response = requests.post("http://14.39.221.117:8000/poem/invoke",
                                  json={'input': {'topic': topic}})
 
     # 응답을 JSON 형식으로 받아와서 출력합니다.
